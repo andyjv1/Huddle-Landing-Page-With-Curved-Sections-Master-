@@ -90,7 +90,7 @@ input:focus {
 
 ### Useful resources
 
-- [<filter>](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/filter) - It helped me learn how to use filter to change the color of svg element when we hover over them.
+- [filter](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/filter) - It helped me learn how to use filter to change the color of svg element when we hover over them.
 - [How to Use HTML5 “picture”, “srcset”, and “sizes” for Responsive Images](https://webdesign.tutsplus.com/tutorials/quick-tip-how-to-use-html5-picture-for-responsive-images--cms-21015) - It helped me learn how to use picture for Responsive Images when we change between mobile and desktop screens.
 - [:focus](https://developer.mozilla.org/en-US/docs/Web/CSS/:focus) - It helped me learn how to use focus to change the css when the input is focused.
 
