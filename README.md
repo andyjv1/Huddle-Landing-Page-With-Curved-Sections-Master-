@@ -33,7 +33,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Solution](https://github.com/andyjv1/Huddle-Landing-Page-With-Curved-Sections-Master-.git)
-- Live Site URL: [Live](https://your-live-site-url.com](https://rad-twilight-0322c7.netlify.app/))
+- Live Site URL: [Live](https://rad-twilight-0322c7.netlify.app/)
 
 ## My process
 
