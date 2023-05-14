@@ -1,70 +1,100 @@
-# Getting Started with Create React App
+# Frontend Mentor - Huddle landing page with curved sections solution
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a solution to the [Huddle landing page with curved sections challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/huddle-landing-page-with-curved-sections-5ca5ecd01e82137ec91a50f2). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
-## Available Scripts
+## Table of contents
 
-In the project directory, you can run:
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Overview
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### The challenge
 
-### `npm test`
+Users should be able to:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- View the optimal layout for the site depending on their device's screen size
+- See hover states for all interactive elements on the page
 
-### `npm run build`
+### Screenshot
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![](./screenshots/screenshot1.png)
+![](./screenshots/screenshot2.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Links
 
-### `npm run eject`
+- Solution URL: [Solution](https://github.com/andyjv1/Huddle-Landing-Page-With-Curved-Sections-Master-.git)
+- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## My process
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Built with
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- Mobile-first workflow
+- React
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### What I learned
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+This project is a great frontend project. I learned a lot in this project. First i learn how to use <picture></picture> for Responsive Images. I also learn how to use filter to change the color of svg element. Finally, i leaned how to use ::placeholder and :focus for the error handle portion.
 
-### Code Splitting
+```html
+ <picture>
+    <source srcset={bottomdesktop2}
+        media="(min-width: 376px)" />
+    <source srcset={bottommobile2} />
+    <img src={bttommobile2} alt="" />
+  </picture>
+```
+```css
+.footercont svg:nth-of-type(1):hover {
+  filter: invert(66%) sepia(78%) saturate(7171%) hue-rotate(202deg)
+    brightness(98%) contrast(94%);
+}
+::placeholder {
+  color: white;
+}
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+input:focus::placeholder {
+  color: #00252e;
+}
 
-### Analyzing the Bundle Size
+input:focus {
+  outline: none;
+}
+```
+```js
+    const validateEmail = (mail) => {
+        setEmail(mail)
+        if (/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(mail)) {
+            setEmailValidation(true)
+        } else {
+            setEmailValidation(false)
+        }
+    }
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+### Useful resources
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- [<filter>](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/filter) - It helped me learn how to use filter to change the color of svg element when we hover over them.
+- [How to Use HTML5 “picture”, “srcset”, and “sizes” for Responsive Images](https://webdesign.tutsplus.com/tutorials/quick-tip-how-to-use-html5-picture-for-responsive-images--cms-21015) - It helped me learn how to use picture for Responsive Images when we change between mobile and desktop screens.
+- [:focus](https://developer.mozilla.org/en-US/docs/Web/CSS/:focus) - It helped me learn how to use focus to change the css when the input is focused.
 
-### Advanced Configuration
+## Author
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- Frontend Mentor - [@andyjv1](https://www.frontendmentor.io/profile/andyjv1)
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

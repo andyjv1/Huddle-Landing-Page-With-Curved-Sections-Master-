@@ -1,0 +1,539 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Sub Format */
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 1.5em 1.5em 0 1.5em;
+  align-items: center;
+}
+
+.nav button {
+  border-radius: 25px;
+  border: 1px solid hsl(322, 100%, 66%);
+  color: hsl(322, 100%, 66%);
+  background: white;
+  font-family: "Open Sans", sans-serif;
+  height: 2.45em;
+  width: 8.34em;
+  font-size: 0.6em;
+}
+
+.nav button:hover {
+  cursor: pointer;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+.nav img {
+  height: 1em;
+  width: 6em;
+}
+
+.firstButton,
+.secondButton {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 15em;
+}
+.firstButton {
+  padding-top: 7em;
+  margin: 0 2.5em;
+}
+
+.secondButton {
+  padding: 4em 0 15.6875em 0;
+}
+.firstButton button,
+.secondButton button {
+  width: 16.7em;
+  height: 3.34em;
+  border-radius: 40px;
+  font-size: 0.75em;
+  color: white;
+  border: 1px solid hsl(322, 100%, 66%);
+  background: hsl(322, 100%, 66%);
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+}
+
+.firstButton button:hover,
+.secondButton button:hover,
+.newslettercont button:hover {
+  cursor: pointer;
+  background: #ff8ed7;
+  border: 1px solid #ff8ed7;
+}
+.body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mockup {
+  width: 100%;
+  height: 12.875em;
+  padding: 0 2.5em;
+  margin-top: 6.5em;
+}
+
+.iconDiv {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0;
+  align-items: center;
+  flex-direction: column;
+}
+
+.communitiesDiv img,
+.messageDiv img {
+  height: 1.6em;
+}
+
+.communitiesDiv img {
+  margin-top: 7.5em;
+}
+
+.messageDiv img {
+  margin-top: 5.5em;
+}
+
+.growDiv img {
+  height: 13.223em;
+  width: 16.163em;
+  margin: 5em 0 4.638em 0;
+}
+
+.usersDiv img {
+  height: 12.625em;
+  width: 16.6875em;
+  margin: 1em 0 4.9375em 0;
+}
+
+.flowingDiv img {
+  width: 16.59375em;
+  height: 11.8125em;
+  margin: 8em 0 5.344em 0;
+}
+
+.growDiv,
+.usersDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: hsl(207, 100%, 98%);
+  flex-direction: column-reverse;
+  text-align: center;
+}
+
+.flowingDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.usersDiv {
+  padding-bottom: 7em;
+}
+
+.fa-phone-volume {
+  font-family: "Font Awesome 5 Free";
+}
+
+.footercont {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: hsl(192, 100%, 9%);
+  padding: 4.25em 1.75em 2.875em 1.75em;
+  flex-direction: column-reverse;
+}
+
+.mainFootercont {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.whiteIcon {
+  filter: invert(100%) sepia(100%) saturate(1%) hue-rotate(305deg)
+    brightness(103%) contrast(101%);
+}
+
+.newslettercont {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.footercont img {
+  width: 12.5em;
+  margin-bottom: 2em;
+}
+.footercont svg {
+  width: 1.5em;
+  height: 1.5em;
+}
+.footercont svg:hover {
+  cursor: pointer;
+}
+
+.footercont svg:nth-of-type(3):hover {
+  filter: invert(71%) sepia(94%) saturate(3396%) hue-rotate(153deg)
+    brightness(102%) contrast(100%);
+}
+.footercont svg:nth-of-type(2):hover {
+  filter: invert(66%) sepia(68%) saturate(3791%) hue-rotate(347deg)
+    brightness(100%) contrast(97%);
+}
+
+.footercont svg:nth-of-type(1):hover {
+  filter: invert(66%) sepia(78%) saturate(7171%) hue-rotate(202deg)
+    brightness(98%) contrast(94%);
+}
+
+.phonecont,
+.emailcont {
+  display: flex;
+  align-items: center;
+}
+
+.phonecont {
+  margin-bottom: 1em;
+}
+
+.emailcont {
+  margin-bottom: 3em;
+}
+
+.brand {
+  height: 2.2em;
+  padding-right: 1em;
+}
+
+input {
+  height: 3.6em;
+  border-radius: 5px;
+  width: 100%;
+  margin-bottom: 1.2em;
+  border: none;
+  padding-left: 1em;
+  font-family: "Open Sans", sans-serif;
+  color: white;
+}
+input:hover {
+  cursor: pointer;
+}
+
+::placeholder {
+  color: white;
+}
+
+input:focus::placeholder {
+  color: #00252e;
+}
+
+input:focus {
+  outline: none;
+}
+
+#error {
+  color: red;
+}
+.newslettercont button {
+  height: 3em;
+  width: 10em;
+  float: right;
+  margin-bottom: 0;
+  border-radius: 5px;
+  color: white;
+  border: 1px solid hsl(322, 100%, 66%);
+  background: hsl(322, 100%, 66%);
+  font-size: 1em;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+}
+
+.mobileimg {
+  display: none;
+}
+/* Text mods */
+
+.firstButton h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5em;
+  text-align: center;
+  padding-bottom: 1em;
+}
+
+.firstButton h3 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  padding: 0 0 3.429em 0;
+  font-size: 0.875em;
+  text-align: center;
+}
+
+.iconDiv h1 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 3.809375em;
+  font-weight: 700;
+}
+
+.iconDiv p {
+  font-family: "Open Sans", sans-serif;
+  color: hsl(214, 17%, 51%);
+  font-size: 0.9525em;
+  text-align: center;
+}
+
+.growDiv h1,
+.flowingDiv h1,
+.usersDiv h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.25em;
+  padding-bottom: 0.8em;
+}
+
+.secondButton h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5em;
+  text-align: center;
+  margin-bottom: 1.6666666em;
+}
+
+.growDiv p,
+.flowingDiv p,
+.usersDiv p {
+  font-family: "Open Sans", sans-serif;
+  padding: 0 1.75em;
+  font-size: 0.875em;
+}
+
+.growDiv p {
+  margin-bottom: 4em;
+}
+
+.flowingDiv p {
+  margin-bottom: 8.571em;
+}
+
+.footercont h2 {
+  font-size: 1.25em;
+  margin-bottom: 0.8em;
+}
+
+.footercont p {
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  font-size: 0.875em;
+  padding: 0;
+  margin-bottom: 2.857em;
+}
+
+.footercont h4 {
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  font-size: 1em;
+  font-weight: 100;
+  display: inline;
+  padding-left: 1.3em;
+}
+
+.newslettercont h2 {
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  font-weight: 400;
+}
+
+.phonecont h4,
+.emailcont h4 {
+  font-size: 0.875em;
+}
+
+@media (min-width: 880px) {
+  .nav {
+    margin: 4.87em 5em 0 5em;
+  }
+
+  .nav img {
+    height: 2.375em;
+    width: 15em;
+  }
+
+  .nav button {
+    height: 2.5em;
+    width: 8.5em;
+    font-size: 1em;
+  }
+
+  .firstButton {
+    padding-top: 13.25em;
+    margin: 0 13.25em;
+  }
+
+  .firstButton h2 {
+    font-size: 3em;
+    padding-bottom: 0.542em;
+  }
+
+  .firstButton h3 {
+    padding: 0 0 2.45em 0;
+    font-size: 1.25em;
+    width: 60%;
+  }
+
+  .firstButton button,
+  .secondButton button {
+    width: 20em;
+    height: 4em;
+    font-size: 1.25em;
+  }
+
+  .mockup {
+    height: auto;
+    padding: 0 13.25em;
+    margin-top: 7.5em;
+  }
+
+  .communitiesDiv img,
+  .messageDiv img {
+    margin-top: 7.5em;
+    height: 4em;
+    width: 4em;
+  }
+
+  .iconDiv h1 {
+    font-size: 6em;
+  }
+
+  .iconDiv p {
+    font-size: 1.5em;
+  }
+
+  .iconDiv {
+    width: 61.11%;
+    flex-direction: row;
+    margin-bottom: 8.3125em;
+  }
+
+  .growDiv,
+  .usersDiv,
+  .flowingDiv {
+    flex-direction: row;
+    width: 100%;
+    padding: 0 7.5em;
+    text-align: left;
+  }
+
+  .growDiv h1,
+  .flowingDiv h1,
+  .usersDiv h1 {
+    font-size: 2.5em;
+    padding-bottom: 0.65em;
+  }
+
+  .growDiv p,
+  .flowingDiv p,
+  .usersDiv p {
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+  }
+
+  .growDiv > div,
+  .flowingDiv > div,
+  .usersDiv > div {
+    width: 43.334%;
+  }
+
+  .growDiv img {
+    height: auto;
+    width: 43.104%;
+    margin: 4.278em 0 2.85em 0;
+  }
+
+  .flowingDiv img {
+    height: auto;
+    margin: 12.125em 0 6.9375em 0;
+    width: 44.25%;
+  }
+
+  .usersDiv img {
+    width: 44.5%;
+    height: auto;
+    margin: 2.625em 0 3.86em 0;
+  }
+
+  .secondButton h1 {
+    font-size: 2.5em;
+    margin-bottom: 1.05em;
+  }
+
+  .footercont {
+    flex-direction: row;
+    padding: 7.195em 7.5em 6.4375em 7.5em;
+    gap: 18%;
+    width: 100%;
+  }
+
+  .footercont p {
+    line-height: 1.714em;
+    margin-bottom: 1.714em;
+  }
+
+  .footercont img {
+    width: 74%;
+    margin-bottom: 2em;
+  }
+
+  .phonecont h4,
+  .emailcont h4 {
+    font-size: 1em;
+  }
+
+  .emailcont {
+    margin-bottom: 5em;
+  }
+
+  .footercont h2 {
+    font-size: 1.5em;
+    margin-bottom: 0.666em;
+  }
+
+  .newslettercont p {
+    margin-bottom: 2.856666em;
+    width: 75%;
+  }
+
+  .iconcont p {
+    width: 80%;
+  }
+
+  .newslettercont > div {
+    display: flex;
+    gap: 7.69%;
+  }
+
+  input {
+    width: 61.538%;
+  }
+
+  .newslettercont button {
+    width: 30.769%;
+  }
+}
