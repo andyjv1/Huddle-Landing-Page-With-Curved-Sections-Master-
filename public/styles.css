@@ -28,6 +28,8 @@
 
 .nav button:hover {
   cursor: pointer;
+  color: #FF8ED7;
+    border: 1px solid #FF8ED7;
 }
 img {
   max-width: 100%;
@@ -364,7 +366,11 @@ input:focus {
 .emailcont h4 {
   font-size: 0.875em;
 }
-
+@media (min-width: 376px) {
+  .mockup {
+    width: 30em;
+}
+}
 @media (min-width: 880px) {
   .nav {
     margin: 4.87em 5em 0 5em;
@@ -405,6 +411,8 @@ input:focus {
   }
 
   .mockup {
+        width: 100%;
+
     height: auto;
     padding: 0 13.25em;
     margin-top: 7.5em;
