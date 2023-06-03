@@ -2,10 +2,10 @@ function SecondButton() {
 
 
     return (   
-        <div className="secondButton">
+        <section className="community">
             <h1>Ready To Build Your Community?</h1>
             <button>Get Started For Free</button>
-        </div>
+        </section>
         
     );
 }

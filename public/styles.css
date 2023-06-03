@@ -6,16 +6,23 @@
   box-sizing: border-box;
 }
 
+/* Main Format */
+main{
+    display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
 /* Sub Format */
 
-.nav {
+header {
   display: flex;
   justify-content: space-between;
   margin: 1.5em 1.5em 0 1.5em;
   align-items: center;
 }
 
-.nav button {
+header button {
   border-radius: 25px;
   border: 1px solid hsl(322, 100%, 66%);
   color: hsl(322, 100%, 66%);
@@ -26,7 +33,7 @@
   font-size: 0.6em;
 }
 
-.nav button:hover {
+header button:hover {
   cursor: pointer;
   color: #FF8ED7;
     border: 1px solid #FF8ED7;
@@ -35,29 +42,29 @@ img {
   max-width: 100%;
   display: block;
 }
-.nav img {
+header img {
   height: 1em;
   width: 6em;
 }
 
-.firstButton,
-.secondButton {
+.title-page,
+.community {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
   padding-top: 15em;
 }
-.firstButton {
+.title-page {
   padding-top: 7em;
   margin: 0 2.5em;
 }
 
-.secondButton {
+.community {
   padding: 4em 0 15.6875em 0;
 }
-.firstButton button,
-.secondButton button {
+.title-page button,
+.community button {
   width: 16.7em;
   height: 3.34em;
   border-radius: 40px;
@@ -69,18 +76,12 @@ img {
   font-weight: 600;
 }
 
-.firstButton button:hover,
-.secondButton button:hover,
-.newslettercont button:hover {
+.title-page button:hover,
+.community button:hover,
+.footer-content__newsletter button:hover {
   cursor: pointer;
   background: #ff8ed7;
   border: 1px solid #ff8ed7;
-}
-.body {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
 }
 
 .mockup {
@@ -90,7 +91,7 @@ img {
   margin-top: 6.5em;
 }
 
-.iconDiv {
+.stats {
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -99,39 +100,39 @@ img {
   flex-direction: column;
 }
 
-.communitiesDiv img,
-.messageDiv img {
+.stats__communities img,
+.stats__message img {
   height: 1.6em;
 }
 
-.communitiesDiv img {
+.stats__communities img {
   margin-top: 7.5em;
 }
 
-.messageDiv img {
+.stats__message img {
   margin-top: 5.5em;
 }
 
-.growDiv img {
+.grow img {
   height: 13.223em;
   width: 16.163em;
   margin: 5em 0 4.638em 0;
 }
 
-.usersDiv img {
+.users img {
   height: 12.625em;
   width: 16.6875em;
   margin: 1em 0 4.9375em 0;
 }
 
-.flowingDiv img {
+.flowing img {
   width: 16.59375em;
   height: 11.8125em;
   margin: 8em 0 5.344em 0;
 }
 
-.growDiv,
-.usersDiv {
+.grow,
+.users {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -140,7 +141,7 @@ img {
   text-align: center;
 }
 
-.flowingDiv {
+.flowing {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -148,15 +149,11 @@ img {
   flex-direction: column;
 }
 
-.usersDiv {
+.users {
   padding-bottom: 7em;
 }
 
-.fa-phone-volume {
-  font-family: "Font Awesome 5 Free";
-}
-
-.footercont {
+.footer-content {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -165,64 +162,64 @@ img {
   flex-direction: column-reverse;
 }
 
-.mainFootercont {
+footer {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
 }
-.whiteIcon {
+.footer-content__info img, .footer-content__info svg {
   filter: invert(100%) sepia(100%) saturate(1%) hue-rotate(305deg)
     brightness(103%) contrast(101%);
 }
 
-.newslettercont {
+.footer-content__newsletter {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
 }
 
-.footercont img {
+.footer-content img {
   width: 12.5em;
   margin-bottom: 2em;
 }
-.footercont svg {
+.footer-content svg {
   width: 1.5em;
   height: 1.5em;
 }
-.footercont svg:hover {
+.footer-content svg:hover {
   cursor: pointer;
 }
 
-.footercont svg:nth-of-type(3):hover {
+.footer-content svg:nth-of-type(3):hover {
   filter: invert(71%) sepia(94%) saturate(3396%) hue-rotate(153deg)
     brightness(102%) contrast(100%);
 }
-.footercont svg:nth-of-type(2):hover {
+.footer-content svg:nth-of-type(2):hover {
   filter: invert(66%) sepia(68%) saturate(3791%) hue-rotate(347deg)
     brightness(100%) contrast(97%);
 }
 
-.footercont svg:nth-of-type(1):hover {
+.footer-content svg:nth-of-type(1):hover {
   filter: invert(66%) sepia(78%) saturate(7171%) hue-rotate(202deg)
     brightness(98%) contrast(94%);
 }
 
-.phonecont,
-.emailcont {
+.footer-content__phone,
+.footer-content__email {
   display: flex;
   align-items: center;
 }
 
-.phonecont {
+.footer-content__phone {
   margin-bottom: 1em;
 }
 
-.emailcont {
+.footer-content__email {
   margin-bottom: 3em;
 }
 
-.brand {
+.footer-content__brand {
   height: 2.2em;
   padding-right: 1em;
 }
@@ -256,7 +253,7 @@ input:focus {
 #error {
   color: red;
 }
-.newslettercont button {
+.footer-content__newsletter button {
   height: 3em;
   width: 10em;
   float: right;
@@ -270,19 +267,16 @@ input:focus {
   font-weight: 600;
 }
 
-.mobileimg {
-  display: none;
-}
 /* Text mods */
 
-.firstButton h2 {
+.title-page h2 {
   font-family: "Poppins", sans-serif;
   font-size: 1.5em;
   text-align: center;
   padding-bottom: 1em;
 }
 
-.firstButton h3 {
+.title-page h3 {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   padding: 0 0 3.429em 0;
@@ -290,56 +284,56 @@ input:focus {
   text-align: center;
 }
 
-.iconDiv h1 {
+.stats h1 {
   font-family: "Open Sans", sans-serif;
   font-size: 3.809375em;
   font-weight: 700;
 }
 
-.iconDiv p {
+.stats p {
   font-family: "Open Sans", sans-serif;
   color: hsl(214, 17%, 51%);
   font-size: 0.9525em;
   text-align: center;
 }
 
-.growDiv h1,
-.flowingDiv h1,
-.usersDiv h1 {
+.grow h1,
+.flowing h1,
+.users h1 {
   font-family: "Poppins", sans-serif;
   font-size: 1.25em;
   padding-bottom: 0.8em;
 }
 
-.secondButton h1 {
+.community h1 {
   font-family: "Poppins", sans-serif;
   font-size: 1.5em;
   text-align: center;
   margin-bottom: 1.6666666em;
 }
 
-.growDiv p,
-.flowingDiv p,
-.usersDiv p {
+.grow p,
+.flowing p,
+.users p {
   font-family: "Open Sans", sans-serif;
   padding: 0 1.75em;
   font-size: 0.875em;
 }
 
-.growDiv p {
+.grow p {
   margin-bottom: 4em;
 }
 
-.flowingDiv p {
+.flowing p {
   margin-bottom: 8.571em;
 }
 
-.footercont h2 {
+.footer-content h2 {
   font-size: 1.25em;
   margin-bottom: 0.8em;
 }
 
-.footercont p {
+.footer-content p {
   font-family: "Open Sans", sans-serif;
   color: white;
   font-size: 0.875em;
@@ -347,7 +341,7 @@ input:focus {
   margin-bottom: 2.857em;
 }
 
-.footercont h4 {
+.footer-content h4 {
   font-family: "Open Sans", sans-serif;
   color: white;
   font-size: 1em;
@@ -356,14 +350,14 @@ input:focus {
   padding-left: 1.3em;
 }
 
-.newslettercont h2 {
+.footer-content__newsletter h2 {
   font-family: "Open Sans", sans-serif;
   color: white;
   font-weight: 400;
 }
 
-.phonecont h4,
-.emailcont h4 {
+.footer-content__phone h4,
+.footer-content__email h4 {
   font-size: 0.875em;
 }
 @media (min-width: 376px) {
@@ -372,39 +366,39 @@ input:focus {
 }
 }
 @media (min-width: 880px) {
-  .nav {
+  header {
     margin: 4.87em 5em 0 5em;
   }
 
-  .nav img {
+  header img {
     height: 2.375em;
     width: 15em;
   }
 
-  .nav button {
+  header button {
     height: 2.5em;
     width: 8.5em;
     font-size: 1em;
   }
 
-  .firstButton {
+  .title-page {
     padding-top: 13.25em;
     margin: 0 13.25em;
   }
 
-  .firstButton h2 {
+  .title-page h2 {
     font-size: 3em;
     padding-bottom: 0.542em;
   }
 
-  .firstButton h3 {
+  .title-page h3 {
     padding: 0 0 2.45em 0;
     font-size: 1.25em;
     width: 60%;
   }
 
-  .firstButton button,
-  .secondButton button {
+  .title-page button,
+  .community button {
     width: 20em;
     height: 4em;
     font-size: 1.25em;
@@ -418,121 +412,121 @@ input:focus {
     margin-top: 7.5em;
   }
 
-  .communitiesDiv img,
-  .messageDiv img {
+  .stats__communities img,
+  .stats__message img {
     margin-top: 7.5em;
     height: 4em;
     width: 4em;
   }
 
-  .iconDiv h1 {
+  .stats h1 {
     font-size: 6em;
   }
 
-  .iconDiv p {
+  .stats p {
     font-size: 1.5em;
   }
 
-  .iconDiv {
+  .stats {
     width: 61.11%;
     flex-direction: row;
     margin-bottom: 8.3125em;
   }
 
-  .growDiv,
-  .usersDiv,
-  .flowingDiv {
+  .grow,
+  .users,
+  .flowing {
     flex-direction: row;
     width: 100%;
     padding: 0 7.5em;
     text-align: left;
   }
 
-  .growDiv h1,
-  .flowingDiv h1,
-  .usersDiv h1 {
+  .grow h1,
+  .flowing h1,
+  .users h1 {
     font-size: 2.5em;
     padding-bottom: 0.65em;
   }
 
-  .growDiv p,
-  .flowingDiv p,
-  .usersDiv p {
+  .grow p,
+  .flowing p,
+  .users p {
     margin: 0;
     padding: 0;
     font-size: 1em;
   }
 
-  .growDiv > div,
-  .flowingDiv > div,
-  .usersDiv > div {
+  .grow > div,
+  .flowing > div,
+  .users > div {
     width: 43.334%;
   }
 
-  .growDiv img {
+  .grow img {
     height: auto;
     width: 43.104%;
     margin: 4.278em 0 2.85em 0;
   }
 
-  .flowingDiv img {
+  .flowing img {
     height: auto;
     margin: 12.125em 0 6.9375em 0;
     width: 44.25%;
   }
 
-  .usersDiv img {
+  .users img {
     width: 44.5%;
     height: auto;
     margin: 2.625em 0 3.86em 0;
   }
 
-  .secondButton h1 {
+  .community h1 {
     font-size: 2.5em;
     margin-bottom: 1.05em;
   }
 
-  .footercont {
+  .footer-content {
     flex-direction: row;
     padding: 7.195em 7.5em 6.4375em 7.5em;
     gap: 18%;
     width: 100%;
   }
 
-  .footercont p {
+  .footer-content p {
     line-height: 1.714em;
     margin-bottom: 1.714em;
   }
 
-  .footercont img {
+  .footer-content img {
     width: 74%;
     margin-bottom: 2em;
   }
 
-  .phonecont h4,
-  .emailcont h4 {
+  .footer-content__phone h4,
+  .footer-content__email h4 {
     font-size: 1em;
   }
 
-  .emailcont {
+  .footer-content__email {
     margin-bottom: 5em;
   }
 
-  .footercont h2 {
+  .footer-content h2 {
     font-size: 1.5em;
     margin-bottom: 0.666em;
   }
 
-  .newslettercont p {
+  .footer-content__newsletter p {
     margin-bottom: 2.856666em;
     width: 75%;
   }
 
-  .iconcont p {
+  .footer-content__info p {
     width: 80%;
   }
 
-  .newslettercont > div {
+  .footer-content__newsletter > div {
     display: flex;
     gap: 7.69%;
   }
@@ -541,7 +535,7 @@ input:focus {
     width: 61.538%;
   }
 
-  .newslettercont button {
+  .footer-content__newsletter button {
     width: 30.769%;
   }
 }

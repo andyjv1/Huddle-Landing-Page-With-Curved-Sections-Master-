@@ -18,28 +18,28 @@ import bottommobile2 from "../images/bg-section-bottom-mobile-2.svg"
 function Body() {
 
     return (
-        <div className="body">
-            <img className="mockup" src={mockup} alt="mockup" />
-            <div className="iconDiv">
-                <div className="communitiesDiv">
-                    <img src={communities} alt="communities" />
+        <>
+            <img className="mockup" src={mockup} alt="Screen mockup" />
+            <section className="stats">
+                <div className="stats__communities">
+                    <img src={communities} alt="Communities icon" />
                     <h1>1.4k+</h1>
                     <p>Communities Formed</p>
                 </div>
-                <div className="messageDiv">
-                    <img src={message} alt="message" />
+                <div className="stats__message">
+                    <img src={message} alt="Message icon" />
                     <h1>2.7m+</h1>
                     <p>Messages Sent</p>
                 </div>
-                
-            </div>
+
+            </section>
             <picture>
-                <source srcset={topdesktop}
+                <source srcSet={topdesktop}
                     media="(min-width: 376px)" />
-                <source srcset={topmobile} />
-                <img src={topmobile} alt="" />
+                <source srcSet={topmobile} />
+                <img src={topmobile} alt="First section top background " />
             </picture>
-            <div className="growDiv">
+            <section className="grow">
                 <div>
                     <h1>Grow Together</h1>
                     <p>Generate meaningful discussions with your
@@ -47,49 +47,49 @@ function Body() {
                         Think of the insightful conversations you miss
                         out on with a feedback form. </p>
                 </div>
-                <img src={grow} alt="grow" />
-            </div>
+                <img src={grow} alt="Grow together illustration" />
+            </section>
             <picture>
-                <source srcset={bottomdesktop}
+                <source srcSet={bottomdesktop}
                     media="(min-width: 376px)" />
-                <source srcset={bottommobile} />
-                <img src={bottommobile} alt="" />
+                <source srcSet={bottommobile} />
+                <img src={bottommobile} alt="First section bottom background" />
             </picture>
-            <div className="flowingDiv">
-                <img src={flowing} alt="flowing" />
-                <div className="flowingText">
+            <section className="flowing">
+                <img src={flowing} alt="Flowing conversation illustration" />
+                <div>
                     <h1>Flowing Conversations</h1>
                     <p>You wouldn't paginate a conversation in real
                         life, so why do it online? Our threads have
                         just-in-time loading for a more natural flow.
                     </p>
                 </div>
-            </div>
+            </section>
             <picture>
-                <source srcset={topdesktop2}
+                <source srcSet={topdesktop2}
                     media="(min-width: 376px)" />
-                <source srcset={topmobile2} />
-                <img src={topmobile2} alt="" />
+                <source srcSet={topmobile2} />
+                <img src={topmobile2} alt="Second section top background" />
             </picture>
-            <div className="usersDiv">
+            <section className="users">
                 <div>
                     <h1>Your Users</h1>
                     <p>It takes no time at all to integrate Huddle
-                        with your app's authentication solution. This 
-                        means, once signed in to your app, your users 
-                        can start chatting immediately. 
+                        with your app's authentication solution. This
+                        means, once signed in to your app, your users
+                        can start chatting immediately.
                     </p>
                 </div>
-                <img src={users} alt="users" />
+                <img src={users} alt="Your users illustration" />
 
-            </div>
+            </section>
             <picture>
-                <source srcset={bottomdesktop2}
+                <source srcSet={bottomdesktop2}
                     media="(min-width: 376px)" />
-                <source srcset={bottommobile2} />
-                <img src={bottommobile2} alt="" />
+                <source srcSet={bottommobile2} />
+                <img src={bottommobile2} alt="Second section bottom background" />
             </picture>
-        </div>
+        </>
 
     );
 }

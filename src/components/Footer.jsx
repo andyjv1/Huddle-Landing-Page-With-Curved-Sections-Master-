@@ -36,33 +36,31 @@ function Footer() {
     }, [emailValidation, focus, email]);
 
     return (
-        <div className="mainFootercont">
-            <img className="footerdesktop" src={footerdesktop} alt="footerdesktop" />
-            <div className="footercont">
-                <div className="iconcont">
-                    <img src={logo} alt="logo" className="whiteIcon logo" />
+        <footer>
+            <img src={footerdesktop} alt="Top footer background" />
+            <div className="footer-content">
+                <div className="footer-content__info">
+                    <img src={logo} alt="Logo"/>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
                         nulla quam, hendrerit lacinia vestibulum a, ultrices quis sem.
                     </p>
-                    <div className="phonecont">
-                        <FontAwesomeIcon icon={faPhoneVolume} className="whiteIcon" />
+                    <div className="footer-content__phone">
+                        <FontAwesomeIcon icon={faPhoneVolume}/>
 
                         <h4>Phone: +1-543-123-4567</h4>
                     </div>
-                    <div className="emailcont">
-                        <FontAwesomeIcon icon={faEnvelope} className="whiteIcon" />
+                    <div className="footer-content__email">
+                        <FontAwesomeIcon icon={faEnvelope}/>
 
                         <h4>example@huddle.com </h4>
                     </div>
-                    <div>
-                        <FontAwesomeIcon icon={faSquareFacebook} className="whiteIcon brand" />
-                        <FontAwesomeIcon icon={faInstagram} className="whiteIcon brand" />
-                        <FontAwesomeIcon icon={faSquareTwitter} className="whiteIcon brand" />
+                        <FontAwesomeIcon icon={faSquareFacebook} className="footer-content__brand" />
+                        <FontAwesomeIcon icon={faInstagram} className="footer-content__brand" />
+                        <FontAwesomeIcon icon={faSquareTwitter} className="footer-content__brand" />
 
-                    </div>
                 </div>
-                <div className="newslettercont">
+                <div className="footer-content__newsletter">
                     <h2>NEWSLETTER</h2>
                     <p>To recieve tips on how to grow your community, sign up to our
                         weekly newsletter. We’ll never send you spam or pass on your
@@ -84,7 +82,7 @@ function Footer() {
                     >Check your email please</p>
                 </div>
             </div>
-        </div>
+        </footer>
     );
 }
 

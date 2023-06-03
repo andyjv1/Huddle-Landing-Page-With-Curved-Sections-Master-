@@ -1,20 +1,22 @@
 import Footer from "./Footer"
 import FirstButton from "./FirstButton"
 import Body from "./Body"
-import Nav from "./Nav"
+import Header from "./Header"
 import SecondButton from "./SecondButton"
 
 function App() {
 
 
     return (
-        <main className="mainContainer">
-            <Nav />
-            <FirstButton />
-            <Body />
-            <SecondButton />
+        <>
+            <Header />
+            <main>
+                <FirstButton />
+                <Body />
+                <SecondButton />
+            </main>
             <Footer />
-        </main>
+        </>
     );
 }
 
